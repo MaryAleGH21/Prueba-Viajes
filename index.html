@@ -4,123 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maria Alejandra Serrano R">
-
+    
     <!--Boostrap CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Viajes</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!--Barra-->  
-<nav class="navbar navbar-expand-lg navbar-light my">
-    <a class="navbar-brand text-white display-4" href="#">Viajes chile</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-link active text-white" href="#">Inicio<span class="sr-only">(current)</span></a>
-        <a class="nav-link text-white" href="#">Quienes somos</a>
-        <a class="nav-link text-white" href="#">Destacados</a>
-        <a class="nav-link text-white" href="#">Contactos</a>
-      </div>
+<!--Barra de navegación-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container mt-0">
+        <a class="navbar-brand text-left" href="#">Viajes chile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-right" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="#">Destacados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-right" href="#">Contacto</a>
+              </li>
+          </ul>
+        </div>
     </div>
-</nav>
+      </nav>
 
-<header>
-   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/carousel1.jpg" class="d-block w-100 m-0" alt="Corousel">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/carousel2.jpg" class="d-block w-100 m-0" alt="Carousel2">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/carousel3.jpg" class="d-block w-100 m-0" alt="Carousel3">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a> 
-  </div>
- </header>
+      <!--Carousels-->
 
-<section class="background-black">
-    <h1 class="font-weight-bold text-center text-white py-5" >¿Quiénes somos?</h1>
-
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <i class="fas fa-plane text-center"></i>
+<section>
+      <div id="carouselExampleIndicators mt-0" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="col-6">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur provident veniam magni amet voluptatibus, officiis eligendi ut a tempora temporibus molestiae aliquam inventore architecto repellendus perspiciatis praesentium voluptates asperiores.</p>
+          <div class="carousel-item">
+            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="col">
-            icono
+          <div class="carousel-item">
+            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptatibus natus debitis enim, dignissimos odit tempore quae quod quasi eum quis, earum harum exercitationem unde, accusamus autem nemo voluptates magnam.</p>
-          </div>
-          <div class="col-5">
-            2 of 3 (wider)
-          </div>
-          <div class="col">
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum mollitia incidunt illum alias quidem delectus id eum! Doloribus molestias libero aut, perspiciatis totam iste vero pariatur est iusto, cumque alias!</p>
-          </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!--Columnas-->
+
+<section>
+   <div class="container-fluid">
+       <h2 class="text-center font-weight-bold text-white my-0 py-4">¿Quiénes Somos?</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col mt-5 text-white"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae iure libero sit ea, sapiente ipsam reprehenderit aliquid, labore velit repudiandae, quasi nesciunt sint quidem a exercitationem? Aut fuga maxime, perspiciatis adipisci tenetur modi dolore mollitia at est veniam eveniet excepturi reprehenderit obcaecati? Ipsam facilis praesentium eaque, impedit aliquam explicabo id, ea accusantium enim quia laboriosam voluptate facere blanditiis possimus deleniti. Obcaecati temporibus nisi eligendi nam commodi porro accusamus asperiores vel.</p></div>
+
+          <div class="col mt-5 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus error voluptatibus, vitae soluta earum natus distinctio consectetur? Sint animi vel dolores. Quaerat magni neque iure ratione et aperiam officiis esse optio amet nam obcaecati veniam harum laborum sapiente illo fugiat ad nemo possimus aliquid non deleniti perspiciatis doloribus, at minus. Veniam expedita recusandae accusantium. Error deleniti expedita reiciendis rerum possimus, voluptas, molestias aspernatur nihil quos, veritatis natus nesciunt asperiores consequuntur.</div>
+
+          <div class="col mt-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vel quidem delectus deserunt error molestiae consequatur a unde eligendi laborum nisi perspiciatis cupiditate similique quaerat tenetur commodi magnam at, vitae, repellat assumenda fugit mollitia facere! Optio delectus, vero fuga saepe minus nulla praesentium impedit ducimus, maiores expedita tenetur quod, iste molestias soluta illum totam consectetur ullam amet atque explicabo aspernatur rerum est tempora laboriosam? Accusantium quos vero recusandae minus reiciendis!</div>
         </div>
       </div>
-</section>
+    </section>
 
-<section class="background-light blue">
-    <h1 class="font-weight-bold text-center text-white py-5 weigt-20px" >Destacados</h1>>
-    <div class="card-deck">
-        <div class="card col-md-4 pb-5">
+<!--Parte de las Card-->
+
+      <section>
+          <h2 class="text-center font-weight-bold text-white m-0 p-5">Destacados</h2>
+      <div class="card-deck justify-content-md-center pb-5">
+        <div class="card mx-2" style="width:18rem">
           <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Volcán</h5>
+            <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card col-md-4 pb-5">
-          <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+        <div class="card mx-2" style="width:18rem">
+            <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        <div class="card mx-2" style="width:18rem">
+          <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Lago</h5>
+            <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card col-md-4 pb-5 ">
-          <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+        <div class="card mx-2" style="width:18rem">
+          <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Desierto</h5>
+            <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card col-md-4 pb-5 ">
-            <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bosque</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-      </div> 
-</section>
+      </div>
+    </section>
 
-    <!--JavaScript and Jquery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-</body>
-</html>
+
+        <!--JavaScript and Jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+    </html>
