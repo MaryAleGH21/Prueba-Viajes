@@ -13,17 +13,4 @@ $(document).ready(function(){
     })
   })
 
-  $(document).ready(function(){
-    $('a[href="#"]').click(function(event){
-        console.log(this,this.hash)
-      if(this.hash !== ""){
-        event.preventDefault();
-        var destino = this.hash;
-        $('html, body').animate({
-          smoothscroll: $(destino).offset().top
-        },800,function(){
-          window.location.destino = destino
-        })
-      }
-    })
-  })
+      
